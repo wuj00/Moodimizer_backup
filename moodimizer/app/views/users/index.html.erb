@@ -1,0 +1,12 @@
+<br>
+<br>
+<br>
+<h1>Member Community</h1>
+
+<% @users.each do |u| %>
+  <h2><%= link_to u.username, user_path(u) %></h2>
+  <p>Number of contributed events: <%= u.events.count %></p>
+  <hr>
+<% end %>
+
+<%= link_to 'Create an account', users_new_path, class: 'btn btn-info' %>

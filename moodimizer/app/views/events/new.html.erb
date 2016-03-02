@@ -1,0 +1,31 @@
+<p>Events#new</p>
+
+<div class="container">
+<%= form_for(@event) do |e| %>
+      <h1 class="form header"><strong>Add an event!</strong></h1>
+
+    <%= e.label :name %>
+    <br>
+    <%= e.text_field :name %>
+		<br>
+    <%= e.label :url %>
+    <br>
+    <%= e.text_field :url %>
+    <br>
+    <%= e.label :mood_id %>
+    <br>
+    <%= e.text_field :mood_id %>
+
+    <!-- add mood -->
+</div>
+
+
+<br>
+<br>
+
+<div class="container">
+  <%= e.submit "Add event", class: "btn btn-large btn-info" %>
+  <%= link_to "Cancel", moods_path, class: 'btn btn-primary' %>
+</div>
+
+<% end %>

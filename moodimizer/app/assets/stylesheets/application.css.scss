@@ -1,0 +1,81 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require rails_bootstrap_forms
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+//#edf2f8; --> light blue grey
+$textColor: #5BC0DE; // --> turquoise color
+$lightGrey: #8C8C8C;// --> light grey
+$standardMargin: 20px;
+
+body {
+    font-family: Moon;
+    color: $textColor;
+    text-align: center;
+    // display: inline-block;
+}
+
+img {
+  border: 8px solid $lightGrey;
+  border-radius: 200px;
+  padding: 5px;
+}
+
+.btn {
+  color: white;
+  background-color: $lightGrey;
+  text-align: center;
+}
+
+.btn-info {
+  color: white;
+  background-color: $textColor;
+  text-align: center;
+}
+
+a {
+  color: $textColor;
+}
+
+h1 {
+
+  font-size: 64px;
+  margin: $standardMargin;
+  text-align: center;
+  //  border: 3px solid $lightGrey;
+}
+
+// .form-group {
+//   text-align: right;
+//   margin-bottom: $standardMargin
+// }
+
+// .col-md-5 {
+//   text-align: right;
+//   margin-bottom: $standardMargin
+// }
+//
+// .col-md-4 col-md-offset-4 {
+//   font-weight: bold;
+//   color: $textColor;
+// }
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+}

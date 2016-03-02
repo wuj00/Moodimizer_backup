@@ -1,0 +1,63 @@
+// Place all the styles related to the Moods controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$textColor: #5BC0DE; //#edf2f8; --> light blue grey
+$lightGrey: #8C8C8C;
+$standardMargin: 20px;
+
+body {
+  // text-align: center;
+  font-size: 14;
+}
+
+.pagination-centered {
+  display: inline-block;
+  float: none;
+  margin: 0px 20px 0px 20px;
+}
+
+.eventsList {
+  margin-left: 550px;
+  margin-top: -300px;
+  float: right;
+}
+
+div.eventsList {
+  padding: 100px;
+  text-align: left;
+  overflow: scroll;
+}
+
+.moodnail {
+  display: inline-block;
+  text-align: center;
+  margin-left: 250px;
+  float: left;
+  p {
+    font-size: 50px;
+    // font-weight: bold;
+  }
+}
+
+.button-show {
+  text-align: center;
+  margin-top: 300px;
+}
+
+.button-index {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: left;
+  font-size: 70px;
+}

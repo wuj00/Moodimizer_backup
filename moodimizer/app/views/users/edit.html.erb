@@ -1,0 +1,19 @@
+<h1>Users#edit</h1>
+<p>Find me in app/views/users/edit.html.erb</p>
+
+<%= form_for @user do |f| %>
+
+	<%= f.label :username %>
+	<%= f.text_field :username %>
+	<%= f.label :email %>
+	<%= f.text_field :email %>
+	<%= f.label :password %>
+	<%= f.password_field :password %>
+
+  	<%= f.submit "Update Profile", class: "btn btn-large btn-info" %>
+
+<% end %>
+
+<br>
+	<%= link_to 'Delete Profile', @user, method: :delete, data: { confirm: 'Are you sure?'}, class: "btn btn-danger" %>
+	<%= link_to 'Cancel', user_path %>

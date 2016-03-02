@@ -1,0 +1,23 @@
+<br>
+<br>
+<h2>Feelin'...</h2>
+
+
+<div class="container">
+  <% @moods.each do |m| %>
+    <div class="pagination-centered">
+      <h3><br><%= link_to (image_tag(m.image)), mood_path(m) %><br><br><%= m.name %></h3>
+    </div>
+  <% end %>
+</div>
+
+
+<br>
+<br>
+<br>
+
+<div class="button-index">
+  <%= link_to 'Check out all events!', events_path, class: 'btn btn-info' %>
+  <%= link_to 'Member Community', users_path, class: 'btn btn-info' %>
+  <%= link_to 'Create an account', users_new_path, class: 'btn btn-info' %>
+</div>

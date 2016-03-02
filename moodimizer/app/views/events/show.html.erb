@@ -1,0 +1,14 @@
+<br>
+<br>
+<br>
+
+<div class="entry">
+  <h3><strong><%= @events.name %></strong></h3>
+  <h4><%= link_to @events.url, "http://#{@events.url}" %></h4>
+  <br>
+  <p>Posted by: <%= link_to @events.user.username, user_path(@events.user) %></p>
+</div>
+
+<hr>
+
+<%= link_to 'Back to events', events_path, class: 'btn btn-info' %>

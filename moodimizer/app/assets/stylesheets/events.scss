@@ -1,0 +1,37 @@
+// Place all the styles related to the Events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$textColor: #5BC0DE; //#edf2f8; --> light blue grey
+$lightGrey: #8C8C8C;
+$standardMargin: 20px;
+
+body {
+  // margin: 50px;
+  
+}
+
+.entry {
+  text-align: left;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.input-append {
+  text-align: center;
+}
+
+.button-index {
+  text-align: center;
+}
+
+li {
+  font-size: 16px;
+}
